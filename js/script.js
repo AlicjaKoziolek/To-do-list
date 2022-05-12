@@ -31,7 +31,7 @@
   
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
-                toggleDoneTask(taskIndex);
+                toggleTaskDone(taskIndex);
             });
         });
       };
