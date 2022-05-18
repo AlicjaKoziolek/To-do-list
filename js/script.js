@@ -110,10 +110,14 @@
      }
   };
 
-      document.querySelector(".js-tasks").innerHTML = StringHTML;
-
+  const render = () => {
+      renderTasks();
       bindRemoveEvents();
       bindToggleDoneEvents();
+
+      renderButtons();
+      bindButtonsEvents();
+  };
 
   const onFormSubmit = (event) => {
       event.preventDefault();
