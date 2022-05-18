@@ -4,6 +4,7 @@
 
   const addNewTask = (newTaskContent) => {
       tasks = [...tasks, {content: newTaskContent}];
+      render();
   };
 
   const removeTask = (taskIndex) => {
