@@ -27,6 +27,19 @@
       render();
   };
 
+  const markAllTaskDone = () => {
+      tasks = tasks.map((task) => ({
+          ...task,
+          done: true,
+      }));
+      render();
+  };
+
+  const toggleHideDoneTasks = () => {
+      hideDoneTasks = !hideDoneTasks;
+      render();
+  };
+ 
   const bindRemoveEvents = () => {
       const removeButtons = document.querySelectorAll(".js-remove");
 
