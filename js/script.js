@@ -18,11 +18,9 @@
   const toggleTaskDone = (taskIndex) => {
       tasks = [
           ...tasks.slice(0, taskIndex),
-         {
-            ...tasks[taskIndex],
-            done: !tasks[taskIndex].done,
-         },
-         tasks.slice(taskIndex +1),
+         {...tasks[taskIndex],
+            done: !tasks[taskIndex].done},
+         ...tasks.slice(taskIndex +1),
       ];
       render();
   };
@@ -62,7 +60,7 @@
 
   const renderTasks = () => {
     const stringHTML = task => `
-    <li class="tasks__item ${task.done && hideDoneTasks ? "tasks__item--hidden" : ""} js-task">
+    <li class="tasks__item ${task.done && hideDoneTasks ? "tasks__item--hidden" : ""} js-tasks">
     <button class="tasks__button tasks__button--toggleDone js-toggleDone">
     ${task.done ? "✓" : ""}
     </button>
@@ -74,7 +72,6 @@
 
     const tasksElement = document.querySelector(".js-tasks");
     tasksElement.innerHTML = tasks.map(stringHTML).join("");
-
   };
 
   const renderButtons = () => {
