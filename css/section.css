@@ -9,7 +9,6 @@
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     border-bottom: 1px solid #dddada;
 }
 
@@ -21,9 +20,11 @@
 
 .section__body {
     padding: 20px;
+    padding-top: 0%;
 }
 
 .section__title {
     font-size: 20px;
     margin: 0;
+    padding: 20px;
 }
