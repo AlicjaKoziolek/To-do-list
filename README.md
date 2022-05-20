@@ -20,7 +20,7 @@ In turn, the presented gif shows the operation of the application after refactor
 ![To-do-list](https://i.imgur.com/w5TrVNC.gif)
 
 ## *Demo*
-To go to the website, click on the link: [To-do List](https://alicjakoziolek.github.io/Homepage/)
+To go to the website, click on the link: [To-do List](https://alicjakoziolek.github.io/to-do-list/)
 
 ## *Technologies used:*
 - HTLM
