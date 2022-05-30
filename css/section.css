@@ -1,6 +1,7 @@
 .section {
     margin: 10px 0;
     background-color: white;
+    word-break: break-word;
 }
 
 .section__header {
